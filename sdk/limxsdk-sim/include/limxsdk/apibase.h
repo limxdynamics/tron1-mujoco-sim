@@ -153,12 +153,38 @@ namespace limxsdk
      */
     virtual void publishDiagnostic(const std::string &name, const std::string &part, int code, int level = 0, const std::string &message = "");
 
+    /**
+     * @brief Sends a JSON-formatted message to the robot's high-level API.
+     * 
+     * Used for custom commands or interactions not covered by the standard API.
+     * 
+     * @param json_payload JSON string adhering to the robot's API protocol.
+     *             Example: {"accid": "xxx", "title": "request_xxx", "timestamp": xxx, "guid": "xxx", "data": {}}
+     */
+    virtual void publishJsonMessage(const std::string &json_payload);
+
+    /**
+     * @brief Registers a callback to handle JSON-formatted responses and notifications from the robot.
+     * 
+     * The callback will be invoked in two scenarios:
+     * 1. When the robot sends a response to a previously sent JSON command (publishJsonMessage)
+     * 2. When the robot initiates a notification (unsolicited message)
+     * 
+     * @param cb Callback function with signature:
+     *           void(const std::string &json_payload)
+     *           where json_payload contains:
+     *           - Response to a command: {"accid": "xxx", "title": "response_xxx", "timestamp": xxx, "guid": "xxx", "data": {}}
+     *           - Notification: {"accid": "xxx", "title": "notify_xxx", "timestamp": xxx, "guid": "xxx", "data": {}}
+     */
+    virtual void subscribeJsonMessage(std::function<void(const std::string &)> cb);
+
   protected:
     std::vector<std::function<void(const ImuDataConstPtr &)>> imu_data_callback_;           // Callback function for handling IMU data updates.
     std::vector<std::function<void(const RobotStateConstPtr &)>> robot_state_callback_;     // Callback function for handling robot state updates.
     std::vector<std::function<void(const RobotCmdConstPtr &)>> robot_cmd_callback_;         // Callback function for handling robot commands in simulation mode.
     std::vector<std::function<void(const SensorJoyConstPtr &)>> sensor_joy_callback_;       // Callback for handling joystick sensor inputs from the robot.
     std::vector<std::function<void(const DiagnosticValueConstPtr &)>> diagnostic_callback_; // Callback for handling diagnostic values from the robot.
+    std::vector<std::function<void(const std::string &)>> json_message_callback_;           // Callback for handling JSON API responses and notification from the robot.
   };
 }
 
