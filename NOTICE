@@ -1,0 +1,14 @@
+LimX Dynamics
+Copyright (c) 2024 LimX Dynamics. All rights reserved.
+
+This product includes software developed by LimX Dynamics
+(https://github.com/limxdynamics).
+
+The following components are bundled as Git submodules. They are
+first-party components maintained by LimX Dynamics and are
+distributed under the Apache License 2.0:
+  - robot-description  (limxdynamics/robot-description)
+  - robot-joystick  (limxdynamics/robot-joystick)
+  - limxsdk-lowlevel  (limxdynamics/limxsdk-lowlevel)
+
+No third-party notices are required.
