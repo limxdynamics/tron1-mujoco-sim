@@ -147,6 +147,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     print(f"*** Model File Loaded: robot-description/pointfoot/{robot_type}/xml/robot.xml ***")
+    print("*** The robot falls until a controller is running. Start your controller, then press Backspace in the MuJoCo window to reset the robot. ***")
 
     # Define the names of the joint sensors used in the robot
     if robot_type.startswith("WF"):
