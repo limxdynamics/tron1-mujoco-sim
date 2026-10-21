@@ -2,6 +2,8 @@ English | [中文](README_cn.md)
 
 # TRON1 MuJoCo Simulator
 
+> 🧭 **Part of the TRON1 open-source ecosystem.** All TRON1 repositories and where to start: [TRON1 open-source ecosystem](https://github.com/limxdynamics/tron1-rl-isaacgym#tron1-open-source-ecosystem).
+
 **Test LimX TRON1 controllers and RL policies in MuJoCo before they touch the real robot.** The simulator speaks the same `limxsdk` interface as the robot, so a controller tested here runs on hardware by pointing it at the robot's IP address.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)

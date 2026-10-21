@@ -2,6 +2,8 @@
 
 # TRON1 MuJoCo 仿真器
 
+> 🧭 **TRON1 开源生态的一部分。** TRON1 全部开源仓库和上手路线：[TRON1 开源生态](https://github.com/limxdynamics/tron1-rl-isaacgym/blob/master/README_cn.md#tron1-开源生态)。
+
 **在 MuJoCo 中测试 LimX TRON1 的控制器和 RL 策略，确认没问题再上真机。** 仿真器与真机使用同一套 `limxsdk` 接口，在这里测试好的控制器，只需改成机器人的 IP 地址就能在真机上运行。
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
