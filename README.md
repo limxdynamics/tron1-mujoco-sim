@@ -56,9 +56,9 @@ python3 -m venv ~/tron1-venv
 source ~/tron1-venv/bin/activate
 
 # Linux x86_64
-pip install tron1-mujoco-sim/limxsdk-lowlevel/python3/amd64/limxsdk-*-py3-none-any.whl
+pip install tron1-mujoco-sim/limxsdk-lowlevel/python3/amd64/limxsdk-*.whl
 # Linux aarch64
-# pip install tron1-mujoco-sim/limxsdk-lowlevel/python3/aarch64/limxsdk-*-py3-none-any.whl
+# pip install tron1-mujoco-sim/limxsdk-lowlevel/python3/aarch64/limxsdk-*.whl
 ```
 
 **3. Start the simulator** (terminal 1):
