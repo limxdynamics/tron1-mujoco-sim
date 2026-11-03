@@ -15,6 +15,8 @@
 
 # TRON1 MuJoCo 仿真器
 
+> **TRON1 开源生态的一部分。** TRON1 全部开源仓库和上手路线：[TRON1 开源生态](https://github.com/limxdynamics/tron1-rl-isaacgym/blob/master/README_cn.md#tron1-开源生态)。
+
 在 MuJoCo 中运行 LimX TRON1 的官方控制器与 RL 策略，用的是和真机完全相同的
 `limxsdk` 接口。控制器连 `127.0.0.1` 就是在驱动这个仿真器，连机器人的 IP 就是
 在驱动机器人，代码一行都不用改。
@@ -218,10 +220,6 @@ TRON1 的代码分散在多个仓库中，本仓库是其中的 sim-to-sim 这�
 | [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) | TRON1 URDF / MJCF 模型（子模块 `robot-description`） |
 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) | Python 与 C++ 底层 SDK（子模块） |
 | [robot-joystick](https://github.com/limxdynamics/robot-joystick) | 虚拟手柄（子模块） |
-
-TRON1 全部仓库与上手路线整理在 tron1-rl-isaacgym 的
-[TRON1 开源生态](https://github.com/limxdynamics/tron1-rl-isaacgym/blob/master/README_cn.md#tron1-开源生态)
-一节。
 
 ## 许可证
 

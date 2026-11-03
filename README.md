@@ -15,6 +15,8 @@
 
 # TRON1 MuJoCo Simulator
 
+> **Part of the TRON1 open-source ecosystem.** All TRON1 repositories and where to start: [TRON1 open-source ecosystem](https://github.com/limxdynamics/tron1-rl-isaacgym#tron1-open-source-ecosystem).
+
 Run the official TRON1 controllers and RL policies in MuJoCo, against the same
 `limxsdk` interface the robot exposes. A controller pointed at `127.0.0.1`
 drives this simulator; pointed at the robot's IP it drives the robot, unchanged.
@@ -233,10 +235,6 @@ TRON1 is split across several repositories. This one is the sim-to-sim step:
 | [tron1-robot-description](https://github.com/limxdynamics/tron1-robot-description) | TRON1 URDF / MJCF models (submodule `robot-description`) |
 | [limxsdk-lowlevel](https://github.com/limxdynamics/limxsdk-lowlevel) | Low-level SDK for Python and C++ (submodule) |
 | [robot-joystick](https://github.com/limxdynamics/robot-joystick) | Virtual joystick (submodule) |
-
-The full map of TRON1 repositories and where to start is kept in the
-[TRON1 open-source ecosystem](https://github.com/limxdynamics/tron1-rl-isaacgym#tron1-open-source-ecosystem)
-section of tron1-rl-isaacgym.
 
 ## License
 
