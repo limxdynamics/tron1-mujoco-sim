@@ -15,7 +15,7 @@
 
 # TRON1 MuJoCo Simulator
 
-> **Part of the TRON1 open-source ecosystem.** All TRON1 repositories and where to start: [TRON1 open-source ecosystem](https://github.com/limxdynamics/tron1-rl-isaacgym#tron1-open-source-ecosystem).
+> **Part of the TRON1 open-source ecosystem.** Where to start and the other TRON1 repositories: [TRON1 quick start](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart.md#tron1).
 
 Run the official TRON1 controllers and RL policies in MuJoCo, against the same
 `limxsdk` interface the robot exposes. A controller pointed at `127.0.0.1`
