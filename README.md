@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/platform-Linux%20x86__64%20%7C%20aarch64-6e7681" alt="Linux x86_64 / aarch64">
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
+<p align="center"><sub>For partnership and procurement inquiries, contact <a href="mailto:opensource@limxdynamics.com">opensource@limxdynamics.com</a></sub></p>
 
 # TRON1 MuJoCo Simulator
 
